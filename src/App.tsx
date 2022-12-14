@@ -1,16 +1,32 @@
-import reactLogo from './assets/react.svg'
-import wave from './assets/layered-waves-haikei.svg'
+import { useLayoutEffect, useState } from 'react';
 import './App.css'
+import HeroSection from './components/HeroSection';
+import Navbar from './components/Navbar';
+import useWindowDimensions from './hook/useWindowDimensions';
+
+
 
 function App() {
 
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const { width } = useWindowDimensions();
+  useLayoutEffect(() => {
+    if (width > 1024) {
+      setIsOpen(true);
+    }
+  }, [width]);
+
+  function fixedPage() {
+    if (isOpen && width < 1024) {
+      return "fixed"
+    }
+  }
+
   return (
-    <div className='relative'>
-      <div className="flex flex-col items-center min-h-[600px] bg-[#6A45AB] -z-10"></div>
-      <div
-        style={{ backgroundImage: "url(" + wave + ")" }}
-        className="w-full aspect-[960/300] bg-cover bg-center bg-no-repeat z-10"
-      ></div>
+    <div className={`w-full ${fixedPage()} `}>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <HeroSection />
     </div>
   );
 }
