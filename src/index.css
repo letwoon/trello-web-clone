@@ -6,14 +6,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
+/* Replace default font family */
 @layer base {
   html {
     font-family: Inter, system-ui, sans-serif;
   }
 }
 
-.nav-item {
-  @apply max-lg:h-16 lg:px-4 flex items-center hover:text-indigo-500 max-lg:border-b max-lg:border-gray-300 text-indigo-900
+/* remove all the tap highlight color in mobile device */
+@layer base {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.section-div {
+  @apply text-slate-800 max-w-2xl text-left
+}
+
+.section-title {
+  @apply uppercase font-semibold mb-2 md:mb-4
+}
+
+.section-subtitle {
+  @apply text-2xl md:text-4xl font-semibold mb-3 md:mb-6
+}
+
+.section-description {
+  @apply text-xl
 }
