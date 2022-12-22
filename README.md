@@ -9,20 +9,22 @@ make with:
 6. Responsive Design
 
 
-Notes:
+<h3>Notes:</h3>
 
-[SVG wave background]
+<h4>[SVG wave background]</h4>
 add layer wave svg background generate from haikei.app as hero section background image to width screen size,
-horizontal scrollbar appear in large screen size<h1>testing</h1>
+horizontal scrollbar appear in large screen size
 
-[Drag Slideshow]
+<h4>[Drag Slideshow]</h4>
 The testimonials section is a slideshow make with framer motion package
 follow the instruction from:
-1. youtube - https://www.youtube.com/watch?v=OgXXSixKIqQ
-2. framer motion documentation example - https://codesandbox.io/s/framer-motion-image-gallery-pqvx3?from-embed=&file=/src/styles.css
+1. youtube - 
+    https://www.youtube.com/watch?v=OgXXSixKIqQ
+2. framer motion documentation example - 
+    https://codesandbox.io/s/framer-motion-image-gallery-pqvx3?from-embed=&file=/src/styles.css
 
 each slide is an individual div instead of image,
-and applying drag gesture behavior to the slides
+and applying drag gesture behavior to the slides.
 
 the problem is:
 need to make slides an absolute, and parent <div> to relative
