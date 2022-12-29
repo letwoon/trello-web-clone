@@ -17,7 +17,7 @@ function Navbar({ isOpen, setIsOpen }: NavbarProps) {
   
   return (
       <nav className="h-16 bg-white flex max-lg:justify-between items-center  max-lg:px-4 lg:pl-4 fixed top-0 inset-x-0 shadow-md z-40">
-        <a href="#" className=" font-extrabold text-3xl text-slate-700 shrink-0">
+        <a href="#" className=" font-extrabold text-3xl text-indigo-900 shrink-0">
           🌊 Wavey
         </a>
 

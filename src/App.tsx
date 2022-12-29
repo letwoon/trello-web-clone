@@ -7,6 +7,9 @@ import useWindowDimensions from './hook/useWindowDimensions';
 import ActionSection from './components/Action_Section/ActionSection';
 import ViewSection from './components/View_Section/ViewSection';
 import TestimonialSection from './components/Testimonial_Section/TestimonialSection';
+import PricingSection from './components/Pricing_Section/PricingSection';
+import CTASection from './components/CTASection';
+import Footer from './components/Footer';
 
 
 
@@ -35,7 +38,10 @@ function App() {
         <TabsSection />
         <ActionSection />
         <ViewSection />
-        <TestimonialSection/>
+        <TestimonialSection />
+        <PricingSection />
+        <CTASection />
+        <Footer />
       </div>
     </div>
   );

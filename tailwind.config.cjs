@@ -1,12 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       backgroundImage: {
-        'wave-bg': "url('./src/assets/layered-waves-haikei.svg')"
-      }
+        "wave-bg": "url('./src/assets/layered-waves-haikei.svg')",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

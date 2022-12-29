@@ -4,7 +4,7 @@ import calendar from "../../assets/View_Section_Assets/TrelloBoard_Calendar_2x.w
 import integration from "../../assets/View_Section_Assets/Integrations_Puzzle.svg";
 import gears from "../../assets/View_Section_Assets/Gears.svg";
 import search_value from "../../assets/View_Section_Assets/Search_Value.svg";
-import PrimaryButton from "../PrimaryButton";
+import ButtonSecondary from "../ButtonSecondary";
 
 function ViewSection() {
   const featureCardContent = [
@@ -39,11 +39,11 @@ function ViewSection() {
           <h3 className="text-white text-4xl font-semibold">
             See work in a whole new way
           </h3>
-          <p className="text-white text-xl mt-2">
+          <p className="text-white text-xl mt-2 mb-6">
             View your team’s projects from every angle and bring a fresh
             perspective to the task at hand.
           </p>
-          <PrimaryButton buttonText="Discover all Trello views" />
+          <ButtonSecondary buttonText="Discover all Trello views" />
         </div>
 
         <div className="bg-white shadow-2xl rounded-lg p-8 max-lg:max-w-[700px] flex flex-col lg:flex-row items-center gap-x-16 mb-8 lg:mb-16 z-20">
@@ -158,7 +158,7 @@ function ViewSection() {
                   </h3>
                   <p className="text-left mb-8">{feature.description}</p>
                 </div>
-                <PrimaryButton buttonText={feature.buttonText} />
+                <ButtonSecondary buttonText={feature.buttonText} />
               </div>
             );
           })}

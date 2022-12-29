@@ -23,11 +23,10 @@ function HeroSection() {
             placeholder="Email"
             autoComplete="off"
           />
-          <input
+          <button
             className="bg-blue-600 rounded-md p-3 text-white hover:brightness-90 cursor-pointer"
-            type="submit"
-            value="Sign up - it's free!"
-          />
+            type="submit">
+          Sign up - it's free!</button>
         </form>
         <a
           className="text-white/80 flex items-center group hover:text-white transition-colors duration-200"
@@ -56,9 +55,12 @@ function HeroSection() {
         </a>
       </div>
       <div className="container mx-auto mt-8">
-        <img className="w-[512px] lg:w-[1024px] mx-auto" src={heroBoard} alt="" />
+        <img
+          className="w-[512px] lg:w-[1024px] mx-auto"
+          src={heroBoard}
+          alt=""
+        />
       </div>
-      
     </div>
   );
 }

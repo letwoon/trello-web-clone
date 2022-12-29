@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "flowbite": "^1.5.5",
     "framer-motion": "^7.10.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "swiper": "^8.4.5"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

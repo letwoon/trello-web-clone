@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import ActionCard from "./ActionCard";
 import { motion, useScroll, useSpring } from "framer-motion";
-import PrimaryButton from "../PrimaryButton";
+import ButtonSecondary from "../ButtonSecondary";
 
 function ActionSection() {
   // Function to use button to control horizontal scroll
@@ -81,7 +81,7 @@ function ActionSection() {
           No need to start from scratch. Jump-start your workflow with a proven
           playbook designed for different teams. Customize it to make it yours.
         </p>
-        <PrimaryButton buttonText="Explore all Use Cases" />
+        <ButtonSecondary buttonText="Explore all Use Cases" />
       </div>
     </div>
   );
